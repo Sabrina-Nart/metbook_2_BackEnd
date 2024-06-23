@@ -3,7 +3,7 @@ import { DataSource, DataSourceOptions } from 'typeorm';
 
 export const dataSourceOptions: DataSourceOptions = {
     type: 'postgres',
-    database: 'meetbook',
+    database: 'metbook_2',
     username: 'postgres',
     password: 'postgres',
     port: 5432,
