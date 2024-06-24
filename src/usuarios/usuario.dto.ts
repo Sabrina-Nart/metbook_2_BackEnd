@@ -32,7 +32,7 @@ export class UsuariosDto {
     @IsOptional()
     genero: SexoEnum;
 
-    @IsEnum(PaisEnum)
+    @IsEnum(PaisEnum, { message: 'O pais deve ser apenas B, E, C, P, U, I, O, R, A, S, J, H, T, M, F'})
     @IsOptional()
     pais: PaisEnum;
 }

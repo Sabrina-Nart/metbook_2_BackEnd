@@ -88,7 +88,7 @@ export class LivrosService {
 
     private validateNumeroPaginas(numeroPaginas: number) {
         if (!Number.isInteger(numeroPaginas) || numeroPaginas <= 0) {
-            throw new BadRequestException('O número de páginas deve conter apenas números positivos.');
+            throw new BadRequestException('O número de páginas deve ser maior que zero!');
         }
     }
 
@@ -100,7 +100,7 @@ export class LivrosService {
 
     private validatePreco(preco: number) {
         if (!Number.isInteger(preco)) {
-            throw new BadRequestException('O preço deve ser um número inteiro.');
+            throw new BadRequestException('O preço deve ser maior que zero.');
         }
     }
 
